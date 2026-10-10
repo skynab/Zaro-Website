@@ -32,8 +32,12 @@ Then open http://localhost:8123.
 - **SoundSplice screenshots:** every `.placeholder` block in `soundsplice.html` shows its
   `data-label`. Swap each one for an `<img>` the way `cutreel.html` does. The app icon
   (`assets/img/brand/soundsplice-icon.svg`) is a placeholder too.
-- **Social links:** in the footer, the YouTube, X, Instagram and LinkedIn icons point to `#`.
-- **Header and footer** are repeated in every page. If you change one, change them all.
+- **Header and footer:** edit the `SITE` object at the top of `assets/js/layout.js`. It holds
+  the nav links, the Donate link, the social links, the legal links and the company name, and
+  every page builds its header and footer from it. Each page only has empty
+  `<header data-layout="header">` / `<footer data-layout="footer">` placeholders.
+- **Placeholders in `layout.js`:** the Donate button and the YouTube, X, Instagram and LinkedIn
+  icons point to `#`.
 - **Accent colours** are set in `:root` in `assets/css/site.css` (`--zaro`, `--cutreel`,
   `--soundsplice`). Each page picks one with a `theme-*` class on `<body>`.
 

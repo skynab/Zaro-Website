@@ -152,6 +152,30 @@ h3 { font-size: clamp(1.45rem, 2.2vw, 1.8rem); }
 .nav .dot--soundsplice { background: var(--soundsplice); }
 .nav .btn { margin-left: 10px; }
 
+/* Rainbow donate button, far right of the header */
+.btn-donate {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-left: 16px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  font: 700 0.9rem/1 var(--font-body);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  /* Two copies of the spectrum in a 200%-wide tile: the button always shows one full rainbow, and
+     sliding by exactly one copy (background-position 100%) loops without a seam. */
+  background: linear-gradient(90deg, #ff3b5c, #ff8a00, #ffd400, #2ed573, #1e90ff, #8e44ff, #ff3b5c, #ff8a00, #ffd400, #2ed573, #1e90ff, #8e44ff, #ff3b5c);
+  background-size: 200% 100%;
+  box-shadow: 0 4px 18px -6px rgba(255, 90, 140, 0.7);
+  animation: rainbow 6s linear infinite;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-donate svg { width: 15px; height: 15px; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.35)); }
+.btn-donate:hover { transform: translateY(-1px) scale(1.03); box-shadow: 0 6px 24px -6px rgba(140, 90, 255, 0.85); }
+@keyframes rainbow { to { background-position: 100% 0; } }
+@media (prefers-reduced-motion: reduce) { .btn-donate { animation: none; } }
+
 .nav-toggle {
   display: none;
   margin-left: auto;
