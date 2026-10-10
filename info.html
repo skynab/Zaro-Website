@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info and help | Zaro</title>
+  <meta name="description" content="Guides, reference, FAQ and support for CutReel and SoundSplice.">
+  <link rel="icon" href="assets/img/brand/zaro-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="theme-zaro">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="cutreel.html"><span class="dot dot--cutreel"></span>CutReel</a>
+        <a href="soundsplice.html"><span class="dot dot--soundsplice"></span>SoundSplice</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="info.html" aria-current="page">Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Info</h1>
+        <p class="lede">Search the guides, reference and FAQ, or pick a starting point below.</p>
+        <form class="search" role="search" onsubmit="return false">
+          <label class="visually-hidden" for="info-search">Search help</label>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="info-search" type="search" placeholder="Search guides, reference and FAQ" autocomplete="off">
+        </form>
+      </div>
+    </section>
+
+    <div class="paper">
+      <!-- Guides -->
+      <section class="section section--tight" aria-labelledby="guides-title">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom:24px">
+            <h2 id="guides-title">Guides and reference</h2>
+          </div>
+          <div class="filter-tabs" role="group" aria-label="Filter by app">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="cutreel" aria-pressed="false">CutReel</button>
+            <button type="button" data-filter="soundsplice" aria-pressed="false">SoundSplice</button>
+            <button type="button" data-filter="general" aria-pressed="false">General</button>
+          </div>
+
+          <!-- Placeholder guides: point each href at the real article when it's written. -->
+          <div class="guide-list" data-searchable>
+            <a class="card guide" href="#" data-app="cutreel">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg></span>
+              <div><h3>Getting started with CutReel</h3><p>Import footage, make your first cut and export a file.</p></div>
+              <span class="g-meta"><span class="pill pill--cutreel">CutReel</span>Getting started</span>
+            </a>
+            <a class="card guide" href="#" data-app="cutreel">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></span>
+              <div><h3>Colour grading in CutReel</h3><p>Primary wheels, curves, qualifiers and LUTs, plus how to read the scopes.</p></div>
+              <span class="g-meta"><span class="pill pill--cutreel">CutReel</span>How-to</span>
+            </a>
+            <a class="card guide" href="#" data-app="cutreel">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h12M12 6l6 6-6 6"/></svg></span>
+              <div><h3>Moving a cut to Premiere Pro or Final Cut</h3><p>Export OpenTimelineIO, FCP7 XML or FCPXML, and bring cuts back in.</p></div>
+              <span class="g-meta"><span class="pill pill--cutreel">CutReel</span>How-to</span>
+            </a>
+            <a class="card guide" href="#" data-app="cutreel">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-5-6-5M12 19h8"/></svg></span>
+              <div><h3>CutReel command-line tools</h3><p>cutreel-render, cutreel-probe, cutreel-otio, cutreel-premiere, cutreel-finalcut and the rest.</p></div>
+              <span class="g-meta"><span class="pill pill--cutreel">CutReel</span>Reference</span>
+            </a>
+            <a class="card guide" href="#" data-app="cutreel">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></span>
+              <div><h3>CutReel keyboard shortcuts</h3><p>Every default shortcut, and how to remap them.</p></div>
+              <span class="g-meta"><span class="pill pill--cutreel">CutReel</span>Reference</span>
+            </a>
+
+            <a class="card guide" href="#" data-app="soundsplice">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg></span>
+              <div><h3>Getting started with SoundSplice</h3><p>Make a project, import or record audio, and export your first mix.</p></div>
+              <span class="g-meta"><span class="pill pill--soundsplice">SoundSplice</span>Getting started</span>
+            </a>
+            <a class="card guide" href="#" data-app="soundsplice">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+              <div><h3>Recording with count-in and monitoring</h3><p>Pick an input, set up the metronome, and record over a backing track.</p></div>
+              <span class="g-meta"><span class="pill pill--soundsplice">SoundSplice</span>How-to</span>
+            </a>
+            <a class="card guide" href="#" data-app="soundsplice">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h2M7 8v8M11 5v14M15 9v6M19 11v2"/></svg></span>
+              <div><h3>Removing background noise</h3><p>Capture a noise print, then reduce it across a clip.</p></div>
+              <span class="g-meta"><span class="pill pill--soundsplice">SoundSplice</span>How-to</span>
+            </a>
+            <a class="card guide" href="#" data-app="soundsplice">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4M15 3v4M7 7h10v4a5 5 0 0 1-10 0zM12 16v5"/></svg></span>
+              <div><h3>Using VST3 and AU plugins</h3><p>Scan for plugins and add them to a track's effect chain.</p></div>
+              <span class="g-meta"><span class="pill pill--soundsplice">SoundSplice</span>How-to</span>
+            </a>
+            <a class="card guide" href="#" data-app="soundsplice">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></span>
+              <div><h3>Exporting a mix or stems</h3><p>Formats, bit depths and per-track stems.</p></div>
+              <span class="g-meta"><span class="pill pill--soundsplice">SoundSplice</span>Reference</span>
+            </a>
+
+            <a class="card guide" href="#" data-app="general">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+              <div><h3>Installing on Windows, macOS and Linux</h3><p>System requirements, and what to do if your OS blocks the installer.</p></div>
+              <span class="g-meta"><span class="pill pill--zaro">General</span>Getting started</span>
+            </a>
+            <a class="card guide" href="https://github.com/skynab" data-app="general">
+              <span class="g-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+              <div><h3>Building from source</h3><p>Compilers, dependencies and CMake steps for each app.</p></div>
+              <span class="g-meta"><span class="pill pill--zaro">General</span>Reference</span>
+            </a>
+          </div>
+          <p class="empty-state" data-empty>No guides match that search. Try a different word, or ask the community below.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--tight" aria-labelledby="faq-title" style="padding-top:0">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom:24px">
+            <h2 id="faq-title">FAQ</h2>
+          </div>
+          <div class="faq" data-searchable>
+            <details data-app="general">
+              <summary>Are the apps really free?</summary>
+              <p>Yes. CutReel and SoundSplice are free to download and use, including commercially. There's no subscription, account or watermark.</p>
+            </details>
+            <details data-app="general">
+              <summary>Which operating systems are supported?</summary>
+              <p>Both apps run on Windows, macOS and Linux. The <a href="downloads.html">Downloads</a> page lists the package for each one.</p>
+            </details>
+            <details data-app="general">
+              <summary>Are they open source?</summary>
+              <p>Yes. CutReel's source is Apache-2.0, and its distributed binaries are GPL-3.0 because of the libraries they include. SoundSplice's source is MIT. See <a href="legal.html#licenses">Licenses</a>.</p>
+            </details>
+            <details data-app="cutreel">
+              <summary>Can CutReel open Premiere Pro or Final Cut projects?</summary>
+              <p>CutReel reads and writes OpenTimelineIO, FCP7 XML (used by Premiere Pro) and FCPXML (used by Final Cut Pro), so cuts can move in both directions.</p>
+            </details>
+            <details data-app="soundsplice">
+              <summary>Which audio formats can SoundSplice export?</summary>
+              <p>WAV, AIFF, FLAC, Ogg Vorbis and MP3, as a full mix or as one stem per track.</p>
+            </details>
+            <details data-app="general">
+              <summary>Where do I report a bug or request a feature?</summary>
+              <p>Open an issue on the app's GitHub repository. The links are under Community and support below.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community -->
+      <section class="section section--tight" aria-labelledby="community-title" style="padding-top:0">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom:24px">
+            <h2 id="community-title">Community and support</h2>
+          </div>
+          <div class="community">
+            <a class="card" href="https://github.com/skynab/CutReel/issues">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+              <h3>CutReel issues</h3>
+              <p>Report a bug or request a feature on GitHub.</p>
+            </a>
+            <a class="card" href="https://github.com/skynab/SoundSplice/issues">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+              <h3>SoundSplice issues</h3>
+              <p>Report a bug or request a feature on GitHub.</p>
+            </a>
+            <a class="card" href="https://github.com/skynab/CutReel/blob/main/CONTRIBUTING.md">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>
+              <h3>Contribute</h3>
+              <p>Code, testing, translations and documentation.</p>
+            </a>
+            <a class="card" href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <h3>Contact us</h3>
+              <p>For press, partnerships and anything else.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="footer-logo" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+        <ul class="social" aria-label="Zaro on social media">
+          <li><a href="https://github.com/skynab" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Zaro Software LLC</span>
+        <ul class="legal-links">
+          <li><a href="legal.html#privacy">Privacy</a></li>
+          <li><a href="legal.html#terms">Terms of use</a></li>
+          <li><a href="legal.html#licenses">Licenses</a></li>
+          <li><a href="legal.html#trademarks">Trademarks</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/info.js"></script>
+</body>
+</html>

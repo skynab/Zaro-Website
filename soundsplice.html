@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoundSplice | Free audio editor by Zaro</title>
+  <meta name="description" content="SoundSplice is a free, open-source multi-track audio editor. Record, import, edit and process audio, then export a mix or stems. Windows, macOS and Linux.">
+  <link rel="icon" href="assets/img/brand/soundsplice-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<!--
+  SoundSplice product page.
+  Layout mirrors the Audacity 4 page. Copy is drafted from SoundSplice/README.md;
+  every visual is a placeholder (.placeholder, data-label="...") to be swapped
+  for real screenshots, the same way cutreel.html uses assets/img/cutreel/.
+-->
+<body class="theme-soundsplice">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="cutreel.html"><span class="dot dot--cutreel"></span>CutReel</a>
+        <a href="soundsplice.html" aria-current="page"><span class="dot dot--soundsplice"></span>SoundSplice</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <img class="hero-icon" src="assets/img/brand/soundsplice-icon.svg" alt="" width="72" height="72">
+          <span class="eyebrow">SoundSplice</span>
+          <h1>Welcome to <span>SoundSplice</span></h1>
+          <p class="lede">A multi-track audio editor. Record, import, edit and process audio on one timeline, then export a finished mix or a set of stems.</p>
+          <div class="btn-row" data-pill-after>
+            <a class="btn btn--primary" href="downloads.html#soundsplice">Download SoundSplice</a>
+            <a class="btn btn--ghost" href="#editing">See what's inside</a>
+          </div>
+          <p class="hero-meta">Windows &middot; macOS &middot; Linux &nbsp;|&nbsp; MIT-licensed source</p>
+        </div>
+        <div class="hero-stage">
+          <div class="hero-shot">
+            <div class="frame">
+              <div class="placeholder mock-daw" data-label="Hero screenshot">
+                <div class="mock-daw__bar"><i></i><i></i><i></i><b>SoundSplice &middot; Multitrack</b></div>
+                <div class="mock-daw__ruler"></div>
+                <div class="mock-daw__tracks">
+                  <div class="mock-track"><div class="mock-track__head"><b>Host</b><span><i>M</i><i>S</i></span></div><div class="mock-track__lane"><div class="mock-clip" style="left:2%;width:30%;background:#1d4d4a" data-wave="3" data-color="#7ff0e0"><em>Intro</em></div><div class="mock-clip" style="left:36%;width:40%;background:#1d4d4a" data-wave="5" data-color="#7ff0e0"><em>Question</em></div><div class="mock-playhead"></div></div></div>
+                  <div class="mock-track"><div class="mock-track__head"><b>Guest</b><span><i>M</i><i>S</i></span></div><div class="mock-track__lane"><div class="mock-clip" style="left:20%;width:48%;background:#3a2f6e" data-wave="9" data-color="#b9adff"><em>Answer</em></div><div class="mock-clip" style="left:72%;width:24%;background:#3a2f6e" data-wave="13" data-color="#b9adff"><em>Story</em></div><div class="mock-playhead"></div></div></div>
+                  <div class="mock-track"><div class="mock-track__head"><b>Music bed</b><span><i>M</i><i>S</i></span></div><div class="mock-track__lane"><div class="mock-clip" style="left:0;width:96%;background:#5a2b1f" data-wave="21" data-bars="240" data-color="#ffb199"><em>Theme</em></div><div class="mock-playhead"></div></div></div>
+                  <div class="mock-track"><div class="mock-track__head"><b>SFX</b><span><i>M</i><i>S</i></span></div><div class="mock-track__lane"><div class="mock-clip" style="left:30%;width:8%;background:#4a4214" data-wave="31" data-bars="30" data-color="#ffe27a"><em>Sting</em></div><div class="mock-clip" style="left:66%;width:10%;background:#4a4214" data-wave="33" data-bars="30" data-color="#ffe27a"><em>Whoosh</em></div><div class="mock-playhead"></div></div></div>
+                </div>
+                <div class="mock-daw__status"></div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-cue" aria-hidden="true">Scroll<i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core interactions -->
+    <section class="section glow" id="editing">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Core interactions</span>
+          <h2>Editing that stays out of your way</h2>
+          <p class="lede">The everyday tools are right on the timeline, and every edit can be undone.</p>
+        </div>
+        <div class="bento">
+          <div class="tile tile--wide reveal">
+            <h3>Clips on a timeline</h3>
+            <p>Move, resize, copy and duplicate clips, or drag them between tracks on a zoomable timeline.</p>
+            <div class="tile-media"><div class="placeholder mock-panel mock-panel--wide" data-label="Screenshot"><div class="mock-clip" style="position:relative;inset:auto;height:60%;width:80%;background:#1d4d4a" data-wave="41" data-bars="200" data-color="#7ff0e0"></div></div></div>
+          </div>
+          <div class="tile reveal">
+            <h3>Record</h3>
+            <p>Record from any audio input, with count-in, a metronome and input monitoring.</p>
+            <div class="tile-media"><div class="placeholder mock-panel" data-label="Screenshot"></div></div>
+          </div>
+          <div class="tile reveal">
+            <h3>Waveform editor</h3>
+            <p>Cut, trim, split, fade, reverse, normalise and change speed or pitch, down to the sample.</p>
+            <div class="tile-media"><div class="placeholder mock-panel" data-label="Screenshot"></div></div>
+          </div>
+          <div class="tile reveal">
+            <h3>Noise reduction</h3>
+            <p>Capture a noise print from a quiet passage, then remove it from the rest of the clip.</p>
+            <div class="tile-media"><div class="placeholder mock-panel" data-label="Screenshot"></div></div>
+          </div>
+          <div class="tile reveal">
+            <h3>Automation</h3>
+            <p>Draw or record gain and pan automation on each track, and on the master.</p>
+            <div class="tile-media"><div class="placeholder mock-panel" data-label="Screenshot"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layouts -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Workspace</span>
+          <h2>Pick a layout or build your own</h2>
+          <p class="lede">Panes dock wherever you drag their tabs. Start from the built-in layouts and arrange them however you like.</p>
+        </div>
+        <div class="center reveal" data-tabs>
+          <div class="tabs" role="tablist" aria-label="SoundSplice layouts">
+            <button role="tab" id="ly-tab-multi" aria-controls="ly-multi" aria-selected="true">Multitrack</button>
+            <button role="tab" id="ly-tab-wave" aria-controls="ly-wave" aria-selected="false" tabindex="-1">Waveform</button>
+            <button role="tab" id="ly-tab-custom" aria-controls="ly-custom" aria-selected="false" tabindex="-1">Custom</button>
+          </div>
+          <div class="tab-panels">
+            <figure class="tab-panel shot" id="ly-multi" role="tabpanel" aria-labelledby="ly-tab-multi">
+              <div class="placeholder mock-panel mock-panel--wide" data-label="Multitrack screenshot"></div>
+              <figcaption>Every track on one timeline, with the mixer alongside.</figcaption>
+            </figure>
+            <figure class="tab-panel shot" id="ly-wave" role="tabpanel" aria-labelledby="ly-tab-wave" hidden>
+              <div class="placeholder mock-panel mock-panel--wide" data-label="Waveform screenshot"><div class="mock-clip" style="position:relative;inset:auto;height:70%;width:92%;background:#0f2e2c" data-wave="57" data-bars="320" data-color="#2fd4c0"></div></div>
+              <figcaption>One clip, full width, for detailed editing.</figcaption>
+            </figure>
+            <figure class="tab-panel shot" id="ly-custom" role="tabpanel" aria-labelledby="ly-tab-custom" hidden>
+              <div class="placeholder mock-panel mock-panel--wide" data-label="Custom layout screenshot"></div>
+              <figcaption>Drag any pane's tab to dock it somewhere else.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Effects -->
+    <section class="section">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Effects</span>
+            <h2>An effect chain on every track</h2>
+            <p class="lede">Each track has an insert chain of built-in effects and hosted plugins. The master bus has the same chain.</p>
+            <div class="chips">
+              <span class="chip">Filter</span><span class="chip">EQ</span><span class="chip">Delay</span><span class="chip">Reverb</span><span class="chip">Drive</span>
+              <span class="chip">Compressor</span><span class="chip">Gate</span><span class="chip">Tremolo</span><span class="chip">Chorus</span><span class="chip">Wobble</span>
+              <span class="chip"><b>VST3</b> plugins</span><span class="chip"><b>AU</b> plugins</span>
+            </div>
+          </div>
+          <div class="reveal"><div class="placeholder mock-panel" data-label="Effect chain screenshot"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mixing & mastering -->
+    <section class="section">
+      <div class="wrap">
+        <div class="split split--flip">
+          <div class="reveal">
+            <span class="eyebrow">Mix and master</span>
+            <h2>Finish the mix in the same window</h2>
+            <p class="lede">A mixer strip for each track, and a mastering rack on the master bus.</p>
+            <ul class="ticks">
+              <li>Gain, pan, mute, solo and a meter on every strip</li>
+              <li>Bus tracks that mix whatever is routed or sent to them</li>
+              <li>Mastering rack: EQ, exciter, widener, reverb and maximiser, with presets</li>
+              <li>A spectrum analyser for any selection</li>
+            </ul>
+          </div>
+          <div class="reveal"><div class="placeholder mock-panel" data-label="Mixer screenshot"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Export -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="cta reveal" style="grid-template-columns:1fr">
+          <div>
+            <span class="eyebrow">Export</span>
+            <h2>A full mix, or every track on its own</h2>
+            <p>Export the whole mix, or write one stem per track.</p>
+          </div>
+          <div class="chips">
+            <span class="chip"><b>WAV</b></span><span class="chip"><b>AIFF</b></span><span class="chip"><b>FLAC</b></span><span class="chip"><b>Ogg Vorbis</b></span><span class="chip"><b>MP3</b></span><span class="chip">Per-track stems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="section section--tight">
+      <div class="wrap center reveal">
+        <h2>Inspired by you</h2>
+        <p class="lede" style="margin-top:14px">SoundSplice handles everyday audio work, from podcasts and music to restoring old recordings.</p>
+      </div>
+      <div class="marquee reveal" style="margin-top:40px" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Podcasts</span><span>Music</span><span>Restoration</span><span>Voice-over</span><span>Audio for video</span><span>Field recording</span><span>Sound design</span>
+          <span>Podcasts</span><span>Music</span><span>Restoration</span><span>Voice-over</span><span>Audio for video</span><span>Field recording</span><span>Sound design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Under the hood -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Under the hood</h2>
+        </div>
+        <div class="hood reveal">
+          <div class="hood-card">
+            <span class="eyebrow">Framework</span>
+            <h3>C++20 on JUCE 8</h3>
+            <p>Audio I/O, plugin hosting and the interface come from one native codebase.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">Plugins</span>
+            <h3>VST3 + AU</h3>
+            <p>Host third-party plugins in the same chain as the built-in effects.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">Projects</span>
+            <h3>.splice files</h3>
+            <p>Projects save as .splice files, with undo and redo for every edit.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">License</span>
+            <h3>Free and open</h3>
+            <p>The source is MIT-licensed. You can read it, build it and change it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" data-pill-stop>
+      <div class="wrap">
+        <div class="cta reveal">
+          <div>
+            <h2>Get SoundSplice</h2>
+            <p>Free for Windows, macOS and Linux.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="downloads.html#soundsplice">Download</a>
+            <a class="btn btn--ghost" href="https://github.com/skynab/SoundSplice">Source on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="float-pill" role="complementary" aria-label="Download SoundSplice">
+    <span>Free and open source, for Windows, macOS and Linux.</span>
+    <a class="btn btn--primary btn--sm" href="downloads.html#soundsplice">Download SoundSplice</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="footer-logo" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+        <ul class="social" aria-label="Zaro on social media">
+          <li><a href="https://github.com/skynab" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Zaro Software LLC</span>
+        <ul class="legal-links">
+          <li><a href="legal.html#privacy">Privacy</a></li>
+          <li><a href="legal.html#terms">Terms of use</a></li>
+          <li><a href="legal.html#licenses">Licenses</a></li>
+          <li><a href="legal.html#trademarks">Trademarks</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

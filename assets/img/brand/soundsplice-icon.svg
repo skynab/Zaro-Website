@@ -1,0 +1,5 @@
+<!-- PLACEHOLDER: SoundSplice app icon until the real one is exported from SoundSplice/resources. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#2fd4c0"/>
+  <path d="M10 21v6M16 13v22M22 18v12M28 9v30M34 16v16M40 21v6" stroke="#120d1f" stroke-width="3.6" stroke-linecap="round"/>
+</svg>

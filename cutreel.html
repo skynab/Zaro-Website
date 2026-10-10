@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CutReel | Free video editor by Zaro</title>
+  <meta name="description" content="CutReel is a free, open-source non-linear video editor. Edit, colour, mix and deliver from one window, composited on the GPU. Windows, macOS and Linux.">
+  <link rel="icon" href="assets/img/cutreel/cutreel-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="theme-cutreel">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="cutreel.html" aria-current="page"><span class="dot dot--cutreel"></span>CutReel</a>
+        <a href="soundsplice.html"><span class="dot dot--soundsplice"></span>SoundSplice</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <img class="hero-icon" src="assets/img/cutreel/cutreel-icon.png" alt="" width="72" height="72">
+          <span class="eyebrow">CutReel 0.7</span>
+          <h1>Cut. Grade. Mix. <span>Deliver.</span></h1>
+          <p class="lede">A free, open-source non-linear video editor. Four workspaces share one timeline, so you can go from the first cut to the final render without leaving the window.</p>
+          <div class="btn-row" data-pill-after>
+            <a class="btn btn--primary" href="downloads.html#cutreel">Download CutReel</a>
+            <a class="btn btn--ghost" href="#workspaces">Take the tour</a>
+          </div>
+          <p class="hero-meta">Windows &middot; macOS &middot; Linux &nbsp;|&nbsp; Apache-2.0 source</p>
+        </div>
+        <div class="hero-stage">
+          <div class="hero-shot">
+            <div class="frame frame--bar">
+              <img src="assets/img/cutreel/01-edit-workspace.png" alt="CutReel's Edit workspace: media bin, a fractal frame with a title on the program monitor, the Inspector, and a four-track timeline" width="1920" height="1018" fetchpriority="high">
+            </div>
+          </div>
+          <div class="scroll-cue" aria-hidden="true">Scroll<i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workspaces -->
+    <section class="section glow" id="workspaces">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Workspaces</span>
+          <h2>Four workspaces, one project</h2>
+          <p class="lede">Edit, Color, Audio and Deliver each bring up the panels that job needs. Every panel docks, tabs and floats, and every hotkey can be remapped.</p>
+        </div>
+
+        <div class="center reveal" data-tabs>
+          <div class="tabs" role="tablist" aria-label="CutReel workspaces">
+            <button role="tab" id="ws-tab-edit" aria-controls="ws-edit" aria-selected="true">Edit</button>
+            <button role="tab" id="ws-tab-color" aria-controls="ws-color" aria-selected="false" tabindex="-1">Color</button>
+            <button role="tab" id="ws-tab-audio" aria-controls="ws-audio" aria-selected="false" tabindex="-1">Audio</button>
+            <button role="tab" id="ws-tab-deliver" aria-controls="ws-deliver" aria-selected="false" tabindex="-1">Deliver</button>
+          </div>
+          <div class="tab-panels">
+            <figure class="tab-panel shot" id="ws-edit" role="tabpanel" aria-labelledby="ws-tab-edit">
+              <img class="zoomable" src="assets/img/cutreel/01-edit-workspace.png" alt="Edit workspace" width="1920" height="1018" loading="lazy">
+              <figcaption>Media bin, source and program monitors, the Inspector and the timeline.</figcaption>
+            </figure>
+            <figure class="tab-panel shot" id="ws-color" role="tabpanel" aria-labelledby="ws-tab-color" hidden>
+              <img class="zoomable" src="assets/img/cutreel/02-color-workspace.png" alt="Color workspace" width="1920" height="1018" loading="lazy">
+              <figcaption>Colour wheels, the grade chain, scopes and a strip of every shot in the cut.</figcaption>
+            </figure>
+            <figure class="tab-panel shot" id="ws-audio" role="tabpanel" aria-labelledby="ws-tab-audio" hidden>
+              <img class="zoomable" src="assets/img/cutreel/03-audio-workspace.png" alt="Audio workspace" width="1920" height="1018" loading="lazy">
+              <figcaption>The mixer, loudness meters and stems, captured mid-playback.</figcaption>
+            </figure>
+            <figure class="tab-panel shot" id="ws-deliver" role="tabpanel" aria-labelledby="ws-tab-deliver" hidden>
+              <img class="zoomable" src="assets/img/cutreel/04-deliver-workspace.png" alt="Deliver workspace" width="1920" height="1018" loading="lazy">
+              <figcaption>Presets, full encoder settings and a render queue.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editing story -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Editing</span>
+          <h2>Made for cutting</h2>
+          <p class="lede">The basics are fast, and the advanced tools are there when the edit calls for them.</p>
+        </div>
+
+        <div class="story" data-story>
+          <div class="story-steps">
+            <article class="story-step">
+              <h3>A timeline built for three-point editing</h3>
+              <p>Picture and sound stay linked. Snap guides show where an edit will land, and the blade previews its cut before it makes it.</p>
+              <ul class="ticks">
+                <li>Select, blade, trim, slip, hand and zoom tools</li>
+                <li>Sync locks, markers, and waveforms on every audio clip</li>
+                <li>Multi-select with grouped undo</li>
+                <li>Nesting, multicam, subclips and match frame</li>
+              </ul>
+              <figure class="shot story-inline"><img src="assets/img/cutreel/timeline.png" alt="CutReel timeline with video, title and audio tracks" width="1260" height="230" loading="lazy"></figure>
+            </article>
+            <article class="story-step">
+              <h3>An Inspector that fits the clip</h3>
+              <p>Every parameter has a slider and a value side by side, and you can keyframe all of them. Titles, shapes, adjustment layers and speed changes each get their own controls.</p>
+              <ul class="ticks">
+                <li>Motion, crop, opacity and blend modes</li>
+                <li>Auto-reframe for vertical and square cuts, plus stabilise</li>
+                <li>Speed, reverse, time remap and freeze frame</li>
+                <li>Shape and Bezier masks, with mask tracking</li>
+              </ul>
+              <figure class="shot story-inline"><img src="assets/img/cutreel/inspector.png" alt="The Inspector panel" width="425" height="660" loading="lazy"></figure>
+            </article>
+            <article class="story-step">
+              <h3>Playback that runs on the GPU</h3>
+              <p>The compositor runs on Direct3D, Metal or Vulkan through Qt RHI. On a 1080p59.94 timeline the playhead stays frame-accurate with no audio dropouts.</p>
+              <ul class="ticks">
+                <li>Render cache and proxies</li>
+                <li>Smart rendering copies untouched segments at export</li>
+                <li>Burn-in and safe-area guides on both monitors</li>
+              </ul>
+              <figure class="shot story-inline"><img src="assets/img/cutreel/program-monitor.png" alt="The program monitor" width="855" height="660" loading="lazy"></figure>
+            </article>
+            <article class="story-step">
+              <h3>Titles, captions and text-based editing</h3>
+              <p>Add lower thirds and animated titles, or caption the cut from SRT or WebVTT. If you delete words from the transcript, the edit follows.</p>
+              <ul class="ticks">
+                <li>Fade, slide and type-on animations</li>
+                <li>Motion graphics templates with responsive timing</li>
+                <li>Burned-in or sidecar captions</li>
+              </ul>
+              <figure class="shot story-inline"><img src="assets/img/cutreel/title-presets.png" alt="Title presets" width="655" height="280" loading="lazy"></figure>
+            </article>
+          </div>
+          <div class="story-visual" aria-hidden="true">
+            <figure><img src="assets/img/cutreel/timeline.png" alt="" class="frame" width="1260" height="230" loading="lazy"></figure>
+            <figure><img src="assets/img/cutreel/inspector.png" alt="" class="frame" width="425" height="660" loading="lazy"></figure>
+            <figure><img src="assets/img/cutreel/program-monitor.png" alt="" class="frame" width="855" height="660" loading="lazy"></figure>
+            <figure><img src="assets/img/cutreel/title-presets.png" alt="" class="frame" width="655" height="280" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Colour -->
+    <section class="section">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Colour</span>
+            <h2>A grade chain you can read</h2>
+            <p class="lede">Primary wheels, curves, secondaries and LUTs are arranged in order, from Primary to Curves to Secondary to Look.</p>
+            <ul class="ticks">
+              <li>Lift, gamma and gain wheels, plus temperature, tint and saturation</li>
+              <li>Hue-vs-hue, hue-vs-sat and sat-vs-luma curves</li>
+              <li>An HSL qualifier with a mask view, and .cube LUTs in and out</li>
+              <li>Log and HDR footage, wide gamuts and tone mapping</li>
+              <li>Shot matching, a comparison view and a still gallery</li>
+              <li>Chroma and luma keys with spill suppression</li>
+            </ul>
+          </div>
+          <div class="collage collage--2 reveal">
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/color-wheels.png" alt="Lift, gamma and gain colour wheels" width="655" height="600" loading="lazy"></figure>
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/grade-chain.png" alt="The grade chain" width="655" height="360" loading="lazy"></figure>
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/shot-strip.png" alt="Shot strip showing each clip in the sequence" width="570" height="64" loading="lazy"><figcaption>The shot strip lets you jump between clips while you grade.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scopes -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Scopes</span>
+          <h2>Check the numbers as well as the picture</h2>
+          <p class="lede">A waveform, an RGB parade, a vectorscope and a histogram, with peak level, black level and saturation shown as numbers.</p>
+        </div>
+        <div class="quad reveal">
+          <figure class="shot"><img class="zoomable" src="assets/img/cutreel/scope-parade.png" alt="RGB parade scope" width="655" height="335" loading="lazy"><figcaption>RGB parade</figcaption></figure>
+          <figure class="shot"><img class="zoomable" src="assets/img/cutreel/scope-waveform.png" alt="Waveform scope" width="655" height="335" loading="lazy"><figcaption>Waveform</figcaption></figure>
+          <figure class="shot"><img class="zoomable" src="assets/img/cutreel/scope-vector.png" alt="Vectorscope" width="655" height="335" loading="lazy"><figcaption>Vectorscope</figcaption></figure>
+          <figure class="shot"><img class="zoomable" src="assets/img/cutreel/scope-histogram.png" alt="Histogram" width="655" height="335" loading="lazy"><figcaption>Histogram</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio -->
+    <section class="section">
+      <div class="wrap">
+        <div class="split split--flip">
+          <div class="reveal">
+            <span class="eyebrow">Audio</span>
+            <h2>Mix without leaving the edit</h2>
+            <p class="lede">Every track gets a channel strip with EQ and compression. Loudness metering and stems are built in.</p>
+            <ul class="ticks">
+              <li>Pan, faders, mute and solo, with live meters</li>
+              <li>Parametric EQ and compressor on each track and on each clip</li>
+              <li>EBU R128 loudness measurement and normalisation</li>
+              <li>Dialogue, music and effects stems, with auto-ducking</li>
+              <li>A 5.1-to-stereo fold-down that keeps the dialogue clear</li>
+              <li>Sync by timecode or by waveform, and music that remixes to fit a length</li>
+            </ul>
+          </div>
+          <div class="collage collage--2 reveal">
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/mixer.png" alt="The mixer" width="580" height="455" loading="lazy"></figure>
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/channel-strip.png" alt="A channel strip with EQ and compressor" width="322" height="520" loading="lazy"></figure>
+            <figure class="shot"><img class="zoomable" src="assets/img/cutreel/loudness-stems.png" alt="Loudness meter and audio stems" width="655" height="525" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery + the rest, as a bento -->
+    <section class="section glow">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Deliver and manage</span>
+          <h2>From the timeline to a finished file</h2>
+        </div>
+        <div class="bento">
+          <div class="tile tile--full reveal">
+            <h3>A Deliver workspace</h3>
+            <p>Pick a preset, adjust the encoder settings, and check the size, bit rate and duration before you render. H.264, H.265 and ProRes are all supported, and graphics can export with alpha.</p>
+            <div class="tile-media"><img class="zoomable" src="assets/img/cutreel/deliver-settings.png" alt="Deliver settings" width="1222" height="560" loading="lazy"></div>
+          </div>
+          <div class="tile tile--sm-half reveal">
+            <h3>Presets</h3>
+            <p>Common targets are one click away.</p>
+            <div class="tile-media"><img class="zoomable" src="assets/img/cutreel/deliver-presets.png" alt="Delivery presets" width="276" height="250" loading="lazy"></div>
+          </div>
+          <div class="tile tile--sm-half reveal">
+            <h3>Render queue</h3>
+            <p>Queue several exports and let them run.</p>
+            <div class="tile-media"><img class="zoomable" src="assets/img/cutreel/render-queue.png" alt="Render queue" width="384" height="905" loading="lazy" style="max-height:340px;width:auto;margin:0 auto"></div>
+          </div>
+          <div class="tile reveal">
+            <h3>Project management</h3>
+            <p>Autosave, crash recovery and project versions. You can relink, consolidate and transcode on ingest, and share projects with an advisory lock.</p>
+            <div class="tile-media"><img class="zoomable" src="assets/img/cutreel/media-bin.png" alt="Media bin" width="445" height="390" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interop -->
+    <section class="section">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Interchange</span>
+            <h2>Works with other editors</h2>
+            <p class="lede">Cuts move both ways between CutReel and other NLEs. Command-line tools handle conversion and batch rendering.</p>
+            <div class="chips">
+              <span class="chip"><b>OTIO</b> OpenTimelineIO</span>
+              <span class="chip"><b>XML</b> Premiere Pro (FCP7)</span>
+              <span class="chip"><b>FCPXML</b> Final Cut Pro</span>
+              <span class="chip"><b>SRT / VTT</b> Captions</span>
+            </div>
+          </div>
+          <div class="terminal reveal" role="img" aria-label="Example command-line usage">
+            <div><span class="c"># convert a cut for Premiere Pro</span></div>
+            <div><span class="p">$ </span>cutreel-premiere export show.cutreel show.xml</div>
+            <div><span class="c"># render without opening the app</span></div>
+            <div><span class="p">$ </span>cutreel-render show.cutreel show.mp4 --width 1280</div>
+            <div><span class="c"># inspect a media file</span></div>
+            <div><span class="p">$ </span>cutreel-probe fractal_zoom.mp4</div>
+            <div><span class="c"># also: cutreel-otio, cutreel-finalcut</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="section section--tight">
+      <div class="wrap center reveal">
+        <h2>Made for the work you do</h2>
+        <p class="lede" style="margin-top:14px">Short films, YouTube channels, documentaries, ads and anything else that needs cutting.</p>
+      </div>
+      <div class="marquee reveal" style="margin-top:40px" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Short films</span><span>Vlogs</span><span>Documentary</span><span>Music videos</span><span>Social cutdowns</span><span>Corporate</span><span>Weddings</span><span>Tutorials</span>
+          <span>Short films</span><span>Vlogs</span><span>Documentary</span><span>Music videos</span><span>Social cutdowns</span><span>Corporate</span><span>Weddings</span><span>Tutorials</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Under the hood -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Under the hood</h2>
+        </div>
+        <div class="hood reveal">
+          <div class="hood-card">
+            <span class="eyebrow">Framework</span>
+            <h3>C++20 on Qt 6</h3>
+            <p>A native interface on Windows, macOS and Linux, from one codebase.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">Media</span>
+            <h3>Built on FFmpeg</h3>
+            <p>Decode and encode the formats you already shoot and deliver in.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">Rendering</span>
+            <h3>GPU compositor</h3>
+            <p>Qt RHI drives Direct3D, Metal or Vulkan, depending on the platform.</p>
+          </div>
+          <div class="hood-card">
+            <span class="eyebrow">License</span>
+            <h3>Free and open</h3>
+            <p>The source is Apache-2.0 and distributed binaries are GPL-3.0.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" data-pill-stop>
+      <div class="wrap">
+        <div class="cta reveal">
+          <div>
+            <h2>Get CutReel</h2>
+            <p>Free for Windows, macOS and Linux. No account, no watermark, no subscription.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="downloads.html#cutreel">Download</a>
+            <a class="btn btn--ghost" href="https://github.com/skynab/CutReel">Source on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="float-pill" role="complementary" aria-label="Download CutReel">
+    <span>Free and open source, for Windows, macOS and Linux.</span>
+    <a class="btn btn--primary btn--sm" href="downloads.html#cutreel">Download CutReel</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="footer-logo" href="index.html" aria-label="Zaro home"><img src="assets/img/brand/zaro-logo.svg" alt="Zaro" width="132" height="32"></a>
+        <ul class="social" aria-label="Zaro on social media">
+          <li><a href="https://github.com/skynab" aria-label="GitHub"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Zaro Software LLC</span>
+        <ul class="legal-links">
+          <li><a href="legal.html#privacy">Privacy</a></li>
+          <li><a href="legal.html#terms">Terms of use</a></li>
+          <li><a href="legal.html#licenses">Licenses</a></li>
+          <li><a href="legal.html#trademarks">Trademarks</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<!-- PLACEHOLDER: replace with the final Zaro logo (keep the file name and roughly a 4:1 ratio). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 32" fill="none" role="img" aria-label="Zaro">
+  <rect x="1" y="1" width="30" height="30" rx="8" fill="#ff6a3d"/>
+  <path d="M9 10h14l-12 12h12" stroke="#120d1f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="23.5" fill="#ffffff" font-family="'Barlow Condensed', 'Arial Narrow', sans-serif" font-weight="700" font-size="24" letter-spacing="1.5">ZARO</text>
+</svg>
