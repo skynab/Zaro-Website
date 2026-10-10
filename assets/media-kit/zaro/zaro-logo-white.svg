@@ -1,0 +1,11 @@
+<!-- PLACEHOLDER: Zaro wordmark with white text, for dark backgrounds. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 32" fill="none" role="img" aria-label="Zaro">
+  <rect x="1" y="1" width="30" height="30" rx="8" fill="#ff6a3d"/>
+  <path d="M9 10h14l-12 12h12" stroke="#120d1f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 10h9l-9 13h9"/>
+    <path d="M53.5 23l4.5-13 4.5 13M55.4 18.5h5.2"/>
+    <path d="M67 23V10h5a3.5 3.5 0 0 1 0 7h-5m5 0 3.5 6"/>
+    <rect x="80" y="10" width="9" height="13" rx="4.5"/>
+  </g>
+</svg>

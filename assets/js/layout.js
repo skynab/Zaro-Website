@@ -38,7 +38,8 @@
       { label: "Privacy", href: "legal.html#privacy" },
       { label: "Terms of use", href: "legal.html#terms" },
       { label: "Licenses", href: "legal.html#licenses" },
-      { label: "Trademarks", href: "legal.html#trademarks" }
+      { label: "Trademarks", href: "legal.html#trademarks" },
+      { label: "Media kit", href: "media-kit.html" }
     ],
 
     company: "Zaro Software LLC",
@@ -65,7 +66,7 @@
   var current = location.pathname.split("/").pop() || "index.html";
 
   var logo =
-    '<img src="' + esc(SITE.logo.src) + '" alt="' + esc(SITE.logo.alt) + '" width="132" height="32">';
+    '<img src="' + esc(SITE.logo.src) + '" alt="' + esc(SITE.logo.alt) + '" width="92" height="32">';
 
   var header = document.querySelector('[data-layout="header"]');
   if (header) {

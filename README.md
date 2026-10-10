@@ -13,6 +13,7 @@ A static site in plain HTML, CSS and JavaScript, with no build step.
 | `downloads.html` | Downloads for every app |
 | `info.html` | Guides, FAQ and support |
 | `legal.html` | Privacy, terms, licenses and trademarks (placeholder text) |
+| `media-kit.html` | Logos, icons, screenshots, colours and descriptions (linked from the footer only) |
 
 ## Run it locally
 
@@ -28,7 +29,12 @@ Then open http://localhost:8123.
   a URL for each platform, and a list of resource cards. Set a platform's `url` to `null` to
   show "Coming soon". To add another app, add another entry.
 - **Logo:** `assets/img/brand/zaro-logo.svg` (wordmark) and `zaro-mark.svg` (favicon) are
-  placeholders. Replace the files and keep the names.
+  placeholders. Replace the files and keep the names. The media kit has its own copies in
+  `assets/media-kit/zaro/` (white and dark wordmarks, the mark, and PNG versions), so replace
+  those too.
+- **Media kit:** files live in `assets/media-kit/`. After adding or replacing any of them, run
+  `python scripts/build-media-kit.py` to rebuild the "Download everything" zip (it also
+  bundles the CutReel screenshots).
 - **SoundSplice screenshots:** every `.placeholder` block in `soundsplice.html` shows its
   `data-label`. Swap each one for an `<img>` the way `cutreel.html` does. The app icon
   (`assets/img/brand/soundsplice-icon.svg`) is a placeholder too.
